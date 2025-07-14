@@ -32,7 +32,7 @@ Z = clf.decision_function(xy).reshape(XX.shape)
 ax.contour(XX, YY, Z, colors='k', levels=[0], linestyles=['-'])
 ax.contour(XX, YY, Z, colors='k', levels=[-1, 1], linestyles=['--'])
 
-# Highlight support vectors
+# Highlight supp vectors
 ax.scatter(clf.support_vectors_[:, 0], clf.support_vectors_[:, 1],
            s=100, linewidth=1, facecolors='none', edgecolors='k')
 
